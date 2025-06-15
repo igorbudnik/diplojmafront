@@ -1,0 +1,58 @@
+.select {
+  height: 45px;
+  width: 320px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 0;
+  margin: 0px;
+  transition: 1s;
+  font-weight: bold;
+  background-color: rgba(119, 135, 139, 1);
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 143%;
+  display: flex;
+  align-items: center;
+  color: #fbf8f1;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.img {
+  fill: #fbf8f1;
+}
+
+/* Выпадающий список */
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: rgba(119, 135, 139, 1);
+  z-index: 100000;
+  margin-top: 4px;
+}
+
+/* Отдельная опция */
+.option {
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.option:hover {
+  background: #f0f0f0;
+  color: rgba(119, 135, 139, 1);
+}

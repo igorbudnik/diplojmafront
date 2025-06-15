@@ -1,0 +1,54 @@
+.main {
+  background-image: url(../backgroung.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #000000;
+  min-height: calc(100vh - 120px); /* Учитываем высоту хедера */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.textBlockLeft {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 2rem;
+  width: 506px;
+  height: 506px;
+}
+
+.imageBlockTop {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 143%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 143%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}

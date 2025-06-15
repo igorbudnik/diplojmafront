@@ -1,0 +1,75 @@
+.table-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 80%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.data-table th {
+  background-color: black;
+  color: white;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: bold;
+  height: 30px;
+  font-family: "Montserrat";
+}
+
+.data-table td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  height: 40px;
+  white-space: nowrap;
+  overflow: hidden; /* Скрытие выходящего за границы текста */
+  text-overflow: ellipsis; /* Добавление многоточия */
+  width: 200px;
+  max-width: 200px;
+  font-family: "Montserrat";
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.data-table tr:nth-child(odd) {
+  background-color: white;
+}
+
+.data-table tr:hover {
+  background-color: #e6f7ff;
+}
+
+.data-table th:first-child {
+  border-radius: 5px 0 0 0;
+}
+
+.data-table th:last-child {
+  border-radius: 0 5px 0 0;
+}
+
+.section {
+  display: flex;
+  position: relative;
+  width: 80%;
+}
+
+.span {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 143%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
