@@ -171,7 +171,7 @@ const MyMap = () => {
     <div className={mapStyle.map}>
       <div className={mapStyle.border}>
         {error ? (
-          "Возникла ошибка. Обновите страницу"
+          "Возникла ошибка. Попробуйте обновить страницу"
         ) : (
           <div
             ref={mapRef}
